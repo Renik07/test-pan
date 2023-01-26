@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <div class="header__content">
+          <a
+            class="header__link"
+            href="/"
+            aria-label="Переход на главную страницу"
+          >
+            <img
+              class="header__logo"
+              src="img/logo.svg"
+              width="75"
+              height="40"
+              alt=""
+            />
+          </a>
+          <nav class="header__menu">
+            <div class="header__item-wrapper">
+              <div class="header__item" id="btn-popup">
+                <span>Пункт 1</span>
+                <img src="img/header-arrow.svg" width="8" height="4" alt="" />
+              </div>
+              <div class="header__popup popup" id="popup">
+                <div class="popup__container">
+                  <div class="popup__content">
+                    <div class="popup__row">
+                      <div class="popup__menu">
+                        <div class="popup__menu-item">
+                          <img
+                            class="popup__menu-icon"
+                            src="img/header-icon.svg"
+                            width="21"
+                            height="14"
+                            alt=""
+                          />
+                          <h3 class="popup__menu-title">Меню 1</h3>
+                          <div class="popup__menu-text">
+                            Покупайте и продавайте
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__menu">
+                        <div class="popup__menu-item">
+                          <img
+                            class="popup__menu-icon"
+                            src="img/header-icon.svg"
+                            width="21"
+                            height="14"
+                            alt=""
+                          />
+                          <h3 class="popup__menu-title">Меню 2</h3>
+                          <div class="popup__menu-text">Давайте подружимся</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popup__divider"></div>
+                    <div class="popup__row">
+                      <div class="popup__menu">
+                        <div class="popup__menu-item">
+                          <img
+                            class="popup__menu-icon"
+                            src="img/header-icon.svg"
+                            width="21"
+                            height="14"
+                            alt=""
+                          />
+                          <h3 class="popup__menu-title">Меню 3</h3>
+                          <div class="popup__menu-text">
+                            Покупайте и продавайте
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__menu">
+                        <div class="popup__menu-item">
+                          <img
+                            class="popup__menu-icon"
+                            src="img/header-icon.svg"
+                            width="21"
+                            height="14"
+                            alt=""
+                          />
+                          <h3 class="popup__menu-title">Меню 4</h3>
+                          <div class="popup__menu-text">Давайте подружимся</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item">Пункт 2</div>
+            <div class="header__item">Пункт 3</div>
+            <div class="header__item">Пункт 4</div>
+            <div class="header__item">Пункт 5</div>
+          </nav>
+          <button class="header__button">Кнопка</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__container container">
+          <div class="intro__content">
+            <h1 class="intro__title">
+              Недвижимость<br />
+              Санкт-Петербурга и Москвы
+            </h1>
+            <form action="" class="intro__form form">
+              <div class="form__inner">
+                <div class="form__city">
+                  <div class="form__title">Выбрать город</div>
+                  <div class="form__select-wrapper">
+                    <select class="form__select">
+                      <option value="" hidden disabled selected>
+                        Выбрать город
+                      </option>
+                      <option disabled>&nbsp;</option>
+                      <option>Москва</option>
+                      <option disabled>&nbsp;</option>
+                      <option>Санкт-Петербург</option>
+                      <option disabled>&nbsp;</option>
+                      <option>Екатеринбург</option>
+                      <option disabled>&nbsp;</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__email">
+                  <div class="form__title">Ваш e-mail</div>
+                  <input type="email" placeholder="info@mail.ru" name="email" />
+                </div>
+              </div>
+              <button class="form__button" type="submit">
+                Кнопка действия
+              </button>
+              <div class="form__privacy">
+                <div class="form__checkbox">
+                  <input
+                    class="form__custom-check"
+                    type="checkbox"
+                    id="privacy"
+                  />
+                  <label for="privacy"></label>
+                </div>
+
+                <span
+                  >Отправляя нам данную форму вы соглашаетесь с
+                  <a href="/">политикой конфиденциальности</a></span
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container container">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Обычный слайдер</h2>
+            <div class="reviews__slider slider">
+              <div class="slider__slides" style="left: 0">
+                <div class="slider__slide">
+                  <picture class="slider__img">
+                    <source srcset="img/slide-1.webp" type="image/webp" />
+                    <img src="img/slide-1.jpg" alt="slide 1" />
+                  </picture>
+                  <div class="slider__rating">
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <picture class="slider__img">
+                    <source srcset="img/slide-2.webp" type="image/webp" />
+                    <img src="img/slide-2.jpg" alt="slide 1" />
+                  </picture>
+                  <div class="slider__rating">
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <picture class="slider__img">
+                    <source srcset="img/slide-3.webp" type="image/webp" />
+                    <img src="img/slide-3.jpg" alt="slide 1" />
+                  </picture>
+                  <div class="slider__rating">
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star active"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      class="slider__star"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.07668 0.719931C8.41827 -0.101362 9.58173 -0.101364 9.92332 0.719929L11.675 4.9314C11.819 5.27764 12.1446 5.51421 12.5184 5.54418L17.065 5.90868C17.9517 5.97976 18.3112 7.08627 17.6357 7.66494L14.1716 10.6323C13.8868 10.8762 13.7624 11.259 13.8495 11.6238L14.9078 16.0605C15.1142 16.9257 14.1729 17.6096 13.4138 17.1459L9.52125 14.7684C9.20124 14.5729 8.79876 14.5729 8.47875 14.7684L4.58619 17.1459C3.82709 17.6096 2.88583 16.9257 3.09222 16.0605L4.15055 11.6238C4.23756 11.259 4.11318 10.8762 3.8284 10.6323L0.364336 7.66494C-0.311201 7.08627 0.0483234 5.97976 0.934978 5.90868L5.48162 5.54418C5.85541 5.51421 6.18102 5.27764 6.32503 4.93141L8.07668 0.719931Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__buttons">
+                <div class="slider__button slider__button--prev">
+                  <img src="img/arrow.svg" width="5" height="10" alt="" />
+                </div>
+                <div class="slider__button slider__button--next">
+                  <img src="img/arrow.svg" width="5" height="10" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__pagination">
+              <div class="slider__pagination-dot active"></div>
+              <div class="slider__pagination-dot"></div>
+              <div class="slider__pagination-dot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="article">
+        <div class="article__container container">
+          <div class="article__content">
+            <div class="article__progressbar">
+              <div class="article__progress">
+                <div class="article__progress-percent">5%</div>
+              </div>
+              <button class="article__progress-button">+25%</button>
+              <p class="article__progress-desc">
+                При нажатии на кнопку прогрессбар заполняется на столько
+                процентов, сколько указано на кнопке
+              </p>
+            </div>
+            <div class="article__fact-wrapper">
+              <div class="article__fact" id="article-popup">
+                <p>
+                  Большинство онкологических пациентов испытывают страх перед
+                  неизвестностью того, что их ожидает в процессе лечения рака.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Molestias laborum id maiores, voluptatem totam aspernatur
+                  neque ratione, esse a facilis veniam vitae dolorem labore
+                  inventore veritatis, atque aperiam omnis modi.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Molestias laborum id maiores, voluptatem totam aspernatur
+                  neque ratione, esse a facilis veniam vitae dolorem labore
+                  inventore veritatis, atque aperiam omnis modi.
+                </p>
+              </div>
+              <button class="article__fact-button" id="btn-article">
+                <span>Подробнее</span>
+                <img src="img/article-arrow.svg" width="8" height="4" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map__container container">
+          <div class="map__content">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A6385dda34c569e358669bc873ab90f2d403e3cb4e99cc6b694aa90d9ecf7d291&amp;source=constructor"
+              width="100%"
+              height="400"
+              title="map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="adv">
+        <div class="adv__container container">
+          <div class="adv__content">
+            <div class="adv__blocks">
+              <div class="adv__block">
+                <h3 class="adv__title">3,000</h3>
+                <div class="adv__text">Агенств</div>
+              </div>
+              <div class="adv__block">
+                <h3 class="adv__title">10,000</h3>
+                <div class="adv__text">Партнеров</div>
+              </div>
+              <div class="adv__block">
+                <h3 class="adv__title">80,000</h3>
+                <div class="adv__text">Квартир в базе</div>
+              </div>
+              <div class="adv__block">
+                <h3 class="adv__title">100+</h3>
+                <div class="adv__text">Застройщиков</div>
+              </div>
+              <div class="adv__block">
+                <h3 class="adv__title">200</h3>
+                <div class="adv__text">Сотрудников</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="up">
+        <div class="up__container container">
+          <div class="up__content">
+            <a class="up__button" href="#header">
+              <span>Наверх</span>
+              <span class="up__button-img">
+                <img src="img/up.svg" width="6" height="3" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="divider__container container"></div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__content">
+            <div class="footer__address">
+              Санкт-Петербург, Владимирский пр., д. 3 лит. А, офис 701
+            </div>
+            <a class="footer__tel" href="tel:+78124456809"
+              >+ 7 (812) 445-68-09</a
+            >
+            <a class="footer__letter" href="/">Напишите нам</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
